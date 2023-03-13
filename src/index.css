@@ -1,0 +1,17 @@
+.container {
+    margin: 0 auto;
+    max-width: 375px;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+header {
+    height: 100px;
+}
+
+section {
+    background-color: lightgray;
+}
