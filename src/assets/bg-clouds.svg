@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1">
+<g id="Cloud" clip-path="url(#clip0_1_30)">
+<rect width="512" height="512" fill="white"/>
+<g id="Cloud_2">
+<path id="center" d="M172 168C172 275 185.5 262 80 262C-48.5 262 -12 262 -12 168C-12 116.085 29.1898 74 80 74C130.81 74 172 116.085 172 168Z" fill="#E1EBF5"/>
+<ellipse id="left" cx="10.5" cy="198" rx="60.5" ry="64" fill="#D2E5F5"/>
+<circle id="right" cx="151.977" cy="220.223" r="42.0234" fill="#D2E5F5"/>
+</g>
+<g id="Cloud_3">
+<path id="center_2" d="M261.963 97.1133C261.963 155.296 254.622 148.227 311.989 148.227C381.862 148.227 362.014 148.227 362.014 97.1133C362.014 68.8842 339.617 46 311.989 46C284.36 46 261.963 68.8842 261.963 97.1133Z" fill="#E1EBF5"/>
+<ellipse id="left_2" cx="32.8974" cy="34.8006" rx="32.8974" ry="34.8006" transform="matrix(-1 0 0 1 382.677 78.6255)" fill="#D2E5F5"/>
+<circle id="right_2" cx="22.8506" cy="22.8506" r="22.8506" transform="matrix(-1 0 0 1 295.701 102.659)" fill="#D2E5F5"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_30">
+<rect width="512" height="512" fill="white"/>
+</clipPath>
+</defs>
+</svg>
