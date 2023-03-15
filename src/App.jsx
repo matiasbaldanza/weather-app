@@ -70,7 +70,7 @@ function App() {
                     </p> 
                   </div>  
 {/* Weather next 6 days */}
-                  <div className='h-[1px] my-2 bg-gray-400'></div>
+                  <div className='h-px my-2 bg-gray-400'></div>
                   <div  className='flex justify-around gap-2'>
                      { 
                         forecastNextSixDays.map((day) => {
@@ -93,7 +93,15 @@ function App() {
                       }
                   </div>
 {/* Additional conditions icons current weather */}
-
+                  <div className='flex justify-between gap-4'>
+                    {[
+                      `H ${current.humidity}%`, 
+                      `P ${current.precip_mm} mm`,
+                      `UV ${current.uv}`
+                    ].map((data) => <div className='p-4 text-center bg-white rounded-full flex-grow basis-[30%]'>
+                        {data}
+                      </div>)}
+                  </div>
 
                 </section>
               </main>
