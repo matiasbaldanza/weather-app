@@ -7,6 +7,7 @@ function App() {
   const { location, current, forecast, alerts } = forecastData ?? {} 
   const forecastNextSixDays = forecast?.forecastday.map((data) => {
     return {
+      date: data.date,
       weekday: new Date(data.date).toLocaleDateString('en-us', { weekday: "short" }), 
       maxtemp_c: Math.round(data.day.maxtemp_c), 
       mintemp_c: Math.round(data.day.mintemp_c), 
@@ -51,7 +52,6 @@ function App() {
                       <p className='' >38°</p>
                       <p className='text-gray-500'>27°</p>
                     </div>
-                    {console.log(current)}
                   </div>
 
 {/* Weather conditions */}
@@ -74,7 +74,9 @@ function App() {
                   <div  className='flex justify-around gap-2'>
                      { 
                         forecastNextSixDays.map((day) => {
-                          return  <div className='flex flex-col gap-1 text-center'>
+                          return  <div 
+                                    key={day.date}
+                                    className='flex flex-col gap-1 text-center'>
                                     <div>{day.weekday.toUpperCase()}</div>
                                     <div className='flex justify-center'>
                                       <img 
@@ -91,6 +93,8 @@ function App() {
                       }
                   </div>
 {/* Additional conditions icons current weather */}
+
+
                 </section>
               </main>
         }
