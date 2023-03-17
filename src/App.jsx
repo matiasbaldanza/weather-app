@@ -179,6 +179,15 @@ function App() {
                   className='flex flex-col gap-4 bg-slate-200 rounded-xl h-44 bg-[url("src/assets/mock-weather-map.png")] bg-contain'> 
                 </section>
 
+{/* Footer */}
+                <footer className='flex justify-around'>
+                  <button className='rounded-full bg-sky-600 py-3 px-4 text-white w-fit self-center'>
+                    Weather API
+                  </button>
+                  <button className='rounded-full bg-sky-600 py-3 px-4 text-white w-fit self-center'>
+                    Matias Baldanza
+                  </button>
+                </footer>
                 
               </main>
         }
