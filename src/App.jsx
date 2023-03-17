@@ -137,7 +137,7 @@ function App() {
                   </div>
 
       {/* 2. Scrollable with hourly forecast */}
-                  <div className='flex flex-col gap-3 text-gray-600'>
+                  <div className='flex flex-col gap-3 text-gray-600 max-h-44 overflow-y-scroll '> {/* TODO: make scrollbar visible (not overlay) and move it to the container edge */}
                       {
                         hourlyForecast.map((hourData) => (
                           <div 
