@@ -168,7 +168,7 @@ function App() {
 
                   </div>
       {/* 3. Button to access more information */}
-      
+                  <button className='rounded-full bg-sky-600 py-3 px-4 text-white w-fit self-center'>More weather details</button>
                 </section>
               </main>
         }
