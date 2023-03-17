@@ -168,8 +168,18 @@ function App() {
 
                   </div>
       {/* 3. Button to access more information */}
-                  <button className='rounded-full bg-sky-600 py-3 px-4 text-white w-fit self-center'>More weather details</button>
+                  <button className='rounded-full bg-sky-600 py-3 px-4 text-white w-fit self-center'>
+                    More weather details
+                  </button>
                 </section>
+
+{/* Weather map section */}
+                {/* TODO: replace mock with actual weather map */}
+                <section 
+                  className='flex flex-col gap-4 bg-slate-200 rounded-xl h-44 bg-[url("src/assets/mock-weather-map.png")] bg-contain'> 
+                </section>
+
+                
               </main>
         }
       </div>
