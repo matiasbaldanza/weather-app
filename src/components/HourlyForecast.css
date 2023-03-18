@@ -1,0 +1,14 @@
+.scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #2D84C7; 
+}
+
+/* 
+other pseudo classes to customize, not used
+    .scrollbar::-webkit-scrollbar-track 
+    .scrollbar::-webkit-scrollbar-thumb:hover
+*/
+

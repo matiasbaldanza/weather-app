@@ -1,10 +1,11 @@
 import React from 'react'
+import './HourlyForecast.css'
 
 function HourlyForecast({ lastUpdated, hourlyForecast }) {
   return (
-    <section className='flex flex-col gap-4 p-4 bg-slate-200 rounded-xl'>
+    <section className='flex flex-col gap-4 py-4 bg-slate-200 rounded-xl'>
     {/* 1. Heading */}
-                <div>
+                <div className='px-4'>
                   <h2
                     className='text-lg font-light uppercase'
                     >{lastUpdated?.toLocaleDateString('en-us', { weekday: "long", month: "long", day: "numeric" })}
@@ -15,7 +16,7 @@ function HourlyForecast({ lastUpdated, hourlyForecast }) {
                 </div>
 
     {/* 2. Scrollable with hourly forecast */}
-                <div className='flex flex-col gap-3 text-gray-600 max-h-44 overflow-y-scroll '> {/* TODO: make scrollbar visible (not overlay) and move it to the container edge */}
+                <div className='flex flex-col gap-3 text-gray-600 max-h-44 overflow-y-scroll scrollbar px-4'> 
                     {
                       hourlyForecast.map((hourData) => (
                         <div 
