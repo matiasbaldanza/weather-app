@@ -21,13 +21,13 @@ function HourlyForecast({ lastUpdated, hourlyForecast }) {
                       hourlyForecast.map((hourData) => (
                         <div 
                           key={hourData.time}
-                          className='grid grid-cols-6 gap-1'
+                          className='grid grid-cols-6 gap-1 text-[0.95rem]'
                         >
                           <div
                             className='justify-self-left'
                           >{hourData.time}</div>
                           <img 
-                            className='justify-self-center h-6 text-right'
+                            className='justify-self-center h-6 w-6 text-right'
                             src={hourData.condition_icon} 
                             alt={hourData.condition_text} 
                             title={hourData.condition_text} 
